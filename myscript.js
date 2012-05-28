@@ -1,7 +1,7 @@
 
 $(document).ready(
 function(){
-  $('.like_link span.default_message').each(function(){
+	$(':button span.default_message, :button.like_link').each(function(){
 
     if($(this).text() == 'Like'){
       $(this).text('ええやん！');
@@ -16,7 +16,7 @@ function(){
 
 $(document).scroll(
 function(){
-  $('.like_link span.default_message').each(function(){
+	$(':button span.default_message, :button.like_link').each(function(){
 
     if($(this).text() == 'Like'){
       $(this).text('ええやん！');
