@@ -1,12 +1,11 @@
 
 $(document).ready(
 function(){
-	$(':button span.default_message, :button.like_link').each(function(){
-
-    if($(this).text() == 'Like'){
+	$(':button.like_link,:button.stat_elem.as_link.cmnt_like_link').each(function(){
+    if($(this).attr("name") == "like"){
       $(this).text('ええやん！');
     }
-    else if($(this).text() == 'Unlike'){
+    else{
       $(this).text('ええやん！を取り消す');
     }
       });
@@ -16,12 +15,11 @@ function(){
 
 $(document).scroll(
 function(){
-	$(':button span.default_message, :button.like_link').each(function(){
-
-    if($(this).text() == 'Like'){
+	$(':button.like_link').each(function(){
+    if($(this).attr("name") == "like"){
       $(this).text('ええやん！');
     }
-    else if($(this).text() == 'Unlike'){
+    else{
       $(this).text('ええやん！を取り消す');
     }
       });
